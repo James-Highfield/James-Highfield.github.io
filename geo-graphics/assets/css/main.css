@@ -1,0 +1,142 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	background-color: black;
+	color: white;
+}
+
+a {
+	color:red;
+}
+
+/*Index Homepage*/
+
+.index-intro {
+	font-size: 18px;
+	margin-bottom: 25vh;
+	padding: 10px;
+}
+
+.index-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-top: 2px solid white;
+}
+
+.index-name {
+	flex: 0 0 50%;
+}
+
+.index-layer {
+	flex: 0 0 25%;
+}
+
+.index-tag {
+	flex: 0 0 25%;
+}
+
+/*END - Index Homepage*/
+
+/*IP ADRESS*/
+
+.ip {
+	background-color: #001b58;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ip-text {
+	font-size: 30vh;
+	text-align: center;
+}
+
+/*END - IP ADRESS*/
+
+/*CHECKERS*/
+
+.checkers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.checkers-black {
+	width: 50vw;
+	height: 50vh;
+	background-color: black;
+}
+
+.checkers-white {
+	width: 50vw;
+	height: 50vh;
+	background-color: white;
+}
+
+/*Circles*/
+
+.cloud-pattern {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cloud-circle {
+	width: 25vw;
+	height: 33.33vh;
+	background-image: linear-gradient(blue,white);
+	border-radius: 50%;
+
+}
+
+/*END CIRCLES*/
+/*CHIP*/
+.chip-container {
+ 	width: 100vw;
+ 	width: 100vh;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.chip {
+	width: 60vw;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid grey;
+	padding: 5vh;
+}
+
+.text {
+	font-size: 15vh;
+	border: solid grey;
+	color: grey;
+	
+}
+/*END CHIP*/
+
+.checkers-type {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.checkers-text {
+	font-size: 30vw;
+	color: red;
+	padding: 2vw;
+	border: 30px solid red;
+	border-radius: 5vw;
+
+
+}
