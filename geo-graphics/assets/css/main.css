@@ -87,7 +87,7 @@ a {
 .cloud-circle {
 	width: 25vw;
 	height: 33.33vh;
-	background-image: linear-gradient(blue,white);
+	background-image: linear-gradient(blue, green, blue);
 	border-radius: 50%;
 
 }
@@ -132,11 +132,11 @@ a {
 }
 
 .checkers-text {
-	font-size: 30vw;
+	font-size: 15vw;
 	color: red;
-	padding: 2vw;
+	padding: 10vw;
 	border: 30px solid red;
-	border-radius: 5vw;
+	border-radius: 100vw;
 
 
 }
