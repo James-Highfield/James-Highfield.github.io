@@ -247,9 +247,11 @@ a {
 	100%{opacity: 1;}
 }
 
-body {
-  background-color: #FFE53B;
-  background-image: linear-gradient(
+.bk {
+	width: 100vw;
+ 	height: 100vh;
+  	background-color: #FFE53B;
+  	background-image: linear-gradient(
       45deg,
       #FF2525 25%,
       transparent 25%,
@@ -265,9 +267,9 @@ body {
       #FF2525 75%,
       #FF2525
     );
-  background-size: 300px 300px;
-  background-position: 0 0;
-  animation: slide 10s infinite linear;
+  	background-size: 300px 300px;
+  	background-position: 0 0;
+  	animation: slide 10s infinite linear;
 }
 
 @keyframes slide {
@@ -281,3 +283,132 @@ body {
 }
 
 /*END - CONSUME*/
+
+/*BLUR*/
+
+.blur {
+ 	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 100%);
+ 	width: 100vw;
+ 	height: 100vh;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.blur-text {
+	font-size: 14vw;
+	font-family: serif;
+	font-style: italic;
+	-webkit-transform:scale(1,3);
+	-webkit-transform:scale(1,3);
+    -moz-transform:scale(1,3);
+    -ms-transform:scale(1,3);
+    -o-transform:scale(1,3);
+    transform:scale(1,3);
+
+	color: transparent;
+	text-shadow: 0 0 1.3vw white;
+}
+
+.censored {
+	color: red;
+	position: fixed;
+	font-size: 5vw;
+	text-align: center;
+	padding: 15vw;
+}
+
+/*END - BLUR*/
+
+/*FLUX*/
+
+.flux {
+	background-color: black;
+ 	width: 100vw;
+ 	height: 100vh;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.flux-text {
+	font-size: 10vw;
+	z-index: 2;
+	font-family: arial;
+	font-style: italic;
+	color: green;
+  	text-align: center;
+  	position: absolute;
+  	-webkit-transform: scale(1,3);
+	-webkit-transform: scale(1,3);
+    -moz-transform: scale(1,3);
+    -ms-transform: scale(1,3);
+    -o-transform: scale(1,3);
+    transform: scale(1,3);
+  	animation: flux-txt 4s infinite alternate;
+}
+
+@keyframes flux-txt {
+	from {color: red;}
+    to {color: blue;}
+}
+
+.flux-shape {
+	width: 30vw;
+  	height: 65vh;
+  	background-color: blue;
+  	border-radius: 50%;
+  	z-index: 1;
+  	position: fixed;
+  	animation: flux 4s infinite alternate;
+  	animation-timing-function: ease-in-out;
+}
+
+@keyframes flux {
+    from {border-radius: 50%;}
+    to {border-radius: 0%;}
+    from {background-color: blue;}
+    to {background-color: red;}
+    from {-webkit-transform: scale(1,1);}
+    to {-webkit-transform: scale(5,1);}
+}
+
+/*END - FLUX*/
+
+/*Triangle*/
+
+.tri {
+	background-color: orange;
+ 	width: 100vw;
+ 	height: 100vh;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.tri-text {
+	font-size: 10vw;
+	z-index: 2;
+	font-family: arial;
+	font-style: italic;
+	color: #F1F2DF;
+  	text-align: center;
+  	position: absolute;
+}
+
+.tri-shape {
+	width: 0;
+	height: 0;
+	position: fixed;
+	border-style: solid;
+	border-width: 0 10vw 17.32vw 10vw;
+	border-color: transparent transparent #007bff transparent;
+
+	animation-name:spin-ani;
+  	animation-duration:2000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: normal;
+}
+/*END - Triangle*/
