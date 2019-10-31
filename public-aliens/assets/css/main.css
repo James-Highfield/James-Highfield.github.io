@@ -1,5 +1,5 @@
 body {
-	font-family: TimesNewRoman;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 30px;
 }
 
@@ -41,7 +41,7 @@ a {
 }
 
 .left-content-header {
-	font-size: 2.85vw;
+	font-size: 2.05vw;
 }
 
 .right {
