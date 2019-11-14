@@ -1,0 +1,122 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 5vw;
+  font-family: sans-serif;
+  color: #ffffff;
+  background: black;
+}
+
+a {
+  color: #196a74;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.cd-background-wrapper {
+  background-color: #001426;
+  position: relative;
+  overflow: hidden;
+  -webkit-perspective: 4000px;
+  perspective: 4000px;
+}
+
+.cd-floating-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  padding: 100px 100px 100px 100px;
+}
+.cd-floating-background.is-absolute {
+  position: absolute;
+}
+.cd-floating-background img {
+  display: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+.cd-floating-background img:not(:first-child) {
+  position: absolute;
+  left:42%;
+  top: 37%;
+  transform: translate(-30%, -30%);
+  width: 15vw;
+  height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.cd-floating-background img:first-child {
+  -webkit-transform: translateZ(50px);
+  -ms-transform: translateZ(50px);
+  transform: translateZ(50px);
+}
+.cd-floating-background img:nth-child(2) {
+  -webkit-transform: translateZ(290px);
+  -ms-transform: translateZ(290px);
+  transform: translateZ(290px);
+}
+.cd-floating-background img:nth-child(3) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(400px);
+}
+.no-preserve-3d .cd-floating-background {
+  position: relative;
+}
+
+/*NAVIGATION*/
+.nav {
+  z-index: 1;
+  width: 100%;
+  background-color: transparent;
+  padding: 15px;
+  position: fixed;
+  top: 50vh;
+  left: 50%;
+  margin-left: -50%;
+  text-align: center;
+
+}
+
+.nav-item {
+  font-size: 3vw;
+  background-color: transparent;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 0px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  font-style: italic;
+}
+
+.nav-item:hover {
+  border-bottom: 5px solid white;
+}
+
+/*END - NAVIGATION*/
