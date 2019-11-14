@@ -1,5 +1,7 @@
 body {
-	font-family: "Times New Roman", Times, serif;
+	font-family: plantin, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 30px;
 }
 
@@ -7,8 +9,71 @@ a {
 	color:red;
 }
 
+/*O-LANDING*/
 
+/*.o-landing {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.o-landing video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.o-landing-title {
+	text-align: center;
+	position: relative;
+}*/
+
+/*END --- O-LANDING*/
+
+/*PUBLIC DOMAIN*/
+
+.left-content-pd {
+	display: none;
+}
+
+.left-content-primary {
+	display: none;
+}
+
+.left-content-primary-info {
+	font-size: 1vw;
+	font-style: italic;
+	color: blue;
+}
+
+.pd-title {
+	color: blue;
+	font-size: 5vw;
+}
+
+.pd-body {
+	font-size: 1.7vw;
+}
+
+.pd-body img{
+	width: 40%;
+}
+
+.pd-return {
+	color: blue;
+	font-size: 3vw;
+	font-style: italic;
+}
+
+.pd-return:hover {
+	font-style: inherit;
+	color: black;
+	text-decoration: underline;
+}
+
+/*END --- PUBLIC DOMAIN*/
 
 .hdrimg {
 	width: 10vw;
@@ -67,7 +132,7 @@ a {
 
 .video {
 	background-color: #202020;
-	width: 80%;
+	width: 100%;
   	display: block;
  	margin-left: auto;
  	margin-right: auto;
@@ -78,14 +143,30 @@ a {
 	text-align: left;
 }
 
-.right-content-sub {
+/*.right-content-sub {
 	padding: 0.5% 10% 0%;
-}
+}*/
 
 /*LANDING PAGE*/
 
 .gif-reel {
 	object-fit: fill;
+}
+
+.right-landing {
+	padding: 0;
+}
+
+.landing-vid {
+	width: 100vw;
+	height: 100vh;
+}
+
+.landing-vid video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: fixed;
 }
 
 /*END - LANDING PAGE*/
@@ -96,9 +177,19 @@ a {
 	text-decoration: none;
 }
 
+.info-link:hover {
+	font-style: italic;
+	border-bottom: 5px solid white;
+}
+
 .info-link-2 {
 	color: blue;
 	text-decoration: none;
+}
+
+.info-link-2:hover {
+	color: black;
+	border-bottom: 0.3vw solid black;
 }
 /*END - LINKSTYLE*/
 
@@ -128,6 +219,7 @@ a {
 	padding: 10px;
 	margin-bottom: 5px;
 	margin-top: 5px;
+	font-size: 1.5vw;
 }
 
 .index-row {
@@ -138,6 +230,7 @@ a {
 	margin-top: 5px;
 	border-top: 2px solid green;
 	cursor: pointer;
+	font-size: 1.7vw;
 }
 
 .index-img {

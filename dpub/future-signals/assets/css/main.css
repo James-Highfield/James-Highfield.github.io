@@ -49,6 +49,18 @@ a {
 	padding: 10px 5px 10px 5px;
 }
 
+.nav-archive-e {
+	font-style: normal;
+	background-color: lime;
+	padding: 10px 5px 10px 5px;
+}
+
+.nav-essay-e {
+	font-style: normal;
+	background-color: lime;
+	padding: 10px 5px 10px 5px;
+}
+
 .nav-cat {
 	background-color: black;
 	color: white;
@@ -80,7 +92,7 @@ a {
 }
 
 .research-item {
-	flex: 0 0 33.33%;
+	flex: 0 0 20%;
 	padding: 10px;
 	transition: 0.7s;
 	cursor: zoom-in;
@@ -103,24 +115,33 @@ a {
 }
 
 .text {
-	flex: 0 0 66.66%;
-	padding: 10px
+	flex: 0 0 50%;
+	padding: 10px;
 }
 
 .text h1 {
-	font-size: 40px;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Space Mono', monospace;
 }
 
 .text p {
 	margin-bottom: 10px;
+	text-indent: 50px;
+
+}
+
+.text-h2 {
+	margin-bottom: 10px;
+	text-indent: 0px;
 }
 
 .figure {
-	flex: 0 0 33.333%;
+	flex: 0 0 50%;
 }
 
 .figure img {
-	width: 100%;
+	width: 99%;
 }
 
 .figure span {
@@ -139,7 +160,7 @@ a {
 }
 
 .large {
-	flex: 0 0 66.666%;
+	flex: 0 0 40%;
 	transition: 0.7s;
 	cursor: zoom-out;
 }

@@ -14,11 +14,17 @@ a {
 }
 
 /*Index Homepage*/
+.index-bg {
+	width: 100%;
+	height: 100%;
+	background-color: blue;
+}
 
 .index-intro {
-	font-size: 18px;
-	margin-bottom: 25vh;
+	font-size: 4.3vw;
+	margin-bottom: 10vh;
 	padding: 10px;
+	font-family: TimesNewRoman;
 }
 
 .index-row {
@@ -78,6 +84,18 @@ a {
    }
 }
 
+@keyframes float-two {
+   0%{
+      transform: perspective(500px)rotatey(90deg);
+   }
+   50%{
+      transform: perspective(500px)rotatey(-10deg);
+   }
+   100%{
+      transform: perspective(500px)rotatey(90deg);
+   }
+}
+
 /*END - PIN*/
 
 /*CHECKERS*/
@@ -97,7 +115,49 @@ a {
 	width: 50vw;
 	height: 50vh;
 	background-color: white;
+	color: black
 }
+
+/*DATA*/
+
+.data {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.data-black {
+	width: 50vw;
+	height: 50vh;
+	background-color: black;
+}
+
+.data-white {
+	width: 50vw;
+	height: 50vh;
+	background-color: white;
+	color: black
+}
+
+.data-type {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.data-text {
+	font-size: 13vw;
+	color: blue;
+	padding: 4vw;
+	border: 20px solid blue;
+	border-radius: 0px;
+}
+
+/*END -- DATA*/
 
 /*Circles*/
 
@@ -107,7 +167,7 @@ a {
 }
 
 .cloud-circle {
-	width: 25vw;
+	width: 20vw;
 	height: 33.33vh;
 	background-image: linear-gradient(blue, green, blue);
 	border-radius: 50%;
@@ -154,9 +214,9 @@ a {
 }
 
 .checkers-text {
-	font-size: 15vw;
+	font-size: 13vw;
 	color: red;
-	padding: 10vw;
+	padding: 4vw;
 	border: 30px solid red;
 	border-radius: 100vw;
 }
@@ -419,28 +479,52 @@ a {
 
 /*Eye*/
 .eye {
- 	
  	display: flex;
  	width: 100vw;
  	height: 100vh;
  	align-items: center;
  	justify-content: center;
+ 	background-color: silver;
+}
+
+.eye-front {
+	display: flex;
+ 	width: 100vw;
+ 	height: 100vh;
+ 	align-items: center;
+ 	justify-content: center;
+ 	position: absolute;
+ 	left: 0;
+ 	top:0;
+}
+
+.eye-dot {
+	width:200px;
+	height: 200px;
+	background-color: blue;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.eye-text {
+	color:black;
 }
 
 .eye-crc img {
-	position: absolute;
-	outline: 5px dotted green;
 	z-index: 1;
 }
 
 .eye-back img {
  	z-index: 3;
- 	outline: 5px dotted green;
  	width: 85vw;
 }
 
 .eye-txt {
-
+	font-size: 20px;
+	color: green;
+  	text-align: center;
 }
 /*END - Eye*/
 /*Battery*/
@@ -471,8 +555,6 @@ a {
 
 .bat-title {
 	font-size: 20vw;
-	font-family: 'Space Mono', monospace;
-	font-weight: bold;
 	position: fixed;
 	bottom: 15vh;
 	padding-bottom: 5vh;
@@ -496,6 +578,7 @@ a {
 	position: absolute;
 	width: 50%;
 	padding: 15vw;
+   	animation: float-two 10s linear infinite;
 }
 
 .id-1 {
@@ -505,12 +588,14 @@ a {
 }
 
 .id-2 {
+	padding: 10px;
 	width: 50%;
   	height: 100vh;
   	background-color: #1F1F1F;
-  	font-size: 8vw;
+  	font-size: 5vw;
   	display: inline;
   	justify-content: center;
+  	overflow: scroll;
 }
 /*END - ID*/
 
@@ -521,21 +606,25 @@ a {
 
 .mtn-1 img {
 	position: absolute;
-	width: 90%;
-	height: 100%;
-	object-fit: fill;
+	width: 100%;
+	height: 93%;
+	object-fit: cover;
 }
 
 .mtn-1 {
-	width: 90%
-	height: 100%;
+	width: 100%
+	height: 93%;
 }
 
-.mtn-2 {
-	width: 10%;
+.mtn-txt {
+	position: relative;
+	width: 100%;
 	height: 100%;
-	background-color: white;
+	align-content: center;
+	justify-content: center;
+	font-style: italic;
 }
+
 /*END - Mountains*/
 
 /*Chrome*/
@@ -586,3 +675,178 @@ a {
 	color: #ebebeb;
 }
 /*END - Chrome*/
+
+/*BLUE SCREEN*/
+
+.bl-cover {
+	background-color: blue;
+	height: 100vh;
+	font-family: 'Inconsolata', monospace;
+}
+
+.bl-txt {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Inconsolata', monospace;
+}
+
+/*END -- BLUE SCREEN*/
+
+/*WATCHTOWER*/
+
+.tower {
+   	background-color: black;
+   	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tower-text {
+   	margin-top: 10vh;
+   	font-family: arial;
+   	font-weight: 100;
+   	font-size: 15vw;
+   	text-align: center;
+   	position: relative;
+   	color: blue;
+   	animation: float 30s linear infinite;
+}
+
+.tower-text img {
+	width: 25vw;
+}
+/*END -- WATCHTOWER*/
+
+/*FINGERPRINT*/
+
+.mtn-cover {
+	display: flex;
+}
+
+.print-1 img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+
+.print-1 {
+	width: 100%
+	height: 100%;
+}
+/*END -- FINGERPRINTS*/
+
+
+/*ORDER*/
+.order {
+ 	width: 100vw;
+ 	height: 100vh;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.order-text {
+	font-size: 25vw;
+	font-family: serif;
+	font-style: italic;
+	-webkit-transform:scale(1,3);
+	-webkit-transform:scale(1,3);
+    -moz-transform:scale(1,3);
+    -ms-transform:scale(1,3);
+    -o-transform:scale(1,3);
+    transform:scale(1,3);
+	color: white;
+}
+
+.order-text2 {
+	color: red;
+	position: fixed;
+	font-size: 5vw;
+	text-align: center;
+	padding: 15vw;
+}
+
+.order-text2 img {
+	width: 50vw;
+}
+/*END -- ORDER*/
+
+
+/*ORDER*/
+.save {
+ 	width: 100vw;
+ 	height: 100vh;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	background: orange;
+}
+
+.save-text {
+	font-size: 20vw;
+	font-family: arial;
+	font-style: italic;
+	-webkit-transform:scale(1,2);
+	-webkit-transform:scale(1,2);
+    -moz-transform:scale(1,2);
+    -ms-transform:scale(1,2);
+    -o-transform:scale(1,2);
+    transform:scale(1,2);
+	color: white;
+}
+/*END -- ORDER*/
+
+/*GLASS*/
+.glass {
+ 	width: 100vw;
+ 	height: 100vh;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.glass-text {
+	font-size: 25vw;
+	font-family: serif;
+	font-style: italic;
+	-webkit-transform:scale(1,3);
+	-webkit-transform:scale(1,3);
+    -moz-transform:scale(1,3);
+    -ms-transform:scale(1,3);
+    -o-transform:scale(1,3);
+    transform:scale(1,3);
+	color: white;
+	position: fixed;
+}
+
+.glass-text2 {
+	color: red;
+	position: fixed;
+	font-size: 5vw;
+	text-align: center;
+	padding: 15vw;
+}
+
+.glass-text2 img {
+	width: 30vw;
+}
+/*END -- GLASS*/
+
+/*HOME*/
+.home {
+ 	width: 100vw;
+ 	height: 100vh;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	background: blue;
+}
+
+.home-text {
+	font-size: 20vw;
+	font-family: serif;
+	color: white;
+/*END -- HOME*/
